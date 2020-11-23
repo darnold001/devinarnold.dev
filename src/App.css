@@ -1,0 +1,157 @@
+body{
+  background-color: black;
+}
+
+h1,h3, p{
+  color: white;
+}
+.navigation-wrapper {
+  position: absolute;
+  right: 68px;
+  width: 20%;
+  background-color: black;
+  height: 2.5rem;
+  padding-top: 40px;
+  transition: width 2s;
+  grid-template-columns: 50% 50%;
+  display: grid;
+}
+
+
+.navigation-wrapper#inactive{
+  width: 0px;
+  overflow: hidden;
+}
+.nav-menu{
+  height: 5rem;
+}
+
+.nav-menu-hamburger{
+  position: absolute;
+  right: 0px;
+  width: 60px;
+  margin-top: 48px;
+}
+button,
+.about-wrapper a,
+.navigation-wrapper a {
+  color: white;
+  background-color: black;
+  padding: 6px;
+  border: 1px solid white;
+  border-radius: 0.25rem;
+  margin: 0.25rem;
+  text-decoration: none;
+  font-weight: bold;
+  overflow: hidden;
+  max-width: 90px;
+  text-align: center;
+}
+
+.welcome-modal {
+  background-color: black;
+  color: white;
+  height: 100vh;
+}
+
+.modal-wrapper a{
+  margin-top: 5rem;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: .25rem;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.modal-wrapper {
+  text-align: center;
+  padding-top: 10rem;
+}
+
+
+
+/* Typewriter css */
+.typewriter{
+  margin-bottom: 10rem;
+}
+
+#cursor {
+  border-left: .1em solid #fcfdfc;
+  animation: blink .7s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+.container {
+  position: relative;
+}
+
+.page {
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  height: 100vh;
+  /* background-color: black; */
+
+}
+
+.page-enter {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.nav-footer{
+  position: absolute;
+  bottom: 8px;
+  margin-left: 45vw;
+}
+
+.nav-footer .footer-icon#github,
+.nav-footer .footer-icon#linkedin,
+.nav-footer .footer-icon#gitlab{
+  width: 30px;
+  margin: 20px;
+}
+
+.about-wrapper p{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.about-wrapper a{
+  margin-top: 3rem;
+  margin-left: 45%;
+}
+
+.headshot{
+  height: 200px;
+  border-radius: .25rem;
+  margin-left: 41%;
+}
