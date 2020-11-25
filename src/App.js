@@ -4,10 +4,10 @@ import "./App.css";
 import Navigation from './Components/navigation'
 import { CSSTransition } from 'react-transition-group'
 import { BrowserRouter as Router, Route } from "react-router-dom";
-
 import About from "./Components/pages/about";
 import Contact from "./Components/pages/contact";
-import Welcome from './Components/pages/welcomeModal'
+import Welcome from './Components/pages/welcome'
+import ComingSoon from './Components/comingSoon'
 
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
     { path: '/', name: 'Home', Component: Welcome },
     { path: '/about', name: 'About', Component: About },
     { path: '/contact', name: 'Contact', Component: Contact },
+    { path: '/projects', name: 'Contact', Component: ComingSoon },
   ]
 
   return (

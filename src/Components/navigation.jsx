@@ -5,13 +5,14 @@ import HamburgerMenu from "react-hamburger-menu";
 const routes = [
   { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },
+  { to: "/projects", label: "Projects" },
 ];
 
 function Navigation() {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
   const links = routes.map(({ to, label }) => {
     return (
-      <NavLink strict exact to={to} key={to}>
+      <NavLink strict exact to={to} key={to} >
         {label}
       </NavLink>
     );
