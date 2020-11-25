@@ -1,13 +1,13 @@
 import React from "react";
-import headshot from "../Images/arnold.jpg";
-import jpn from "../Images/devin_jpn.jpeg";
-import { Link } from "react-router-dom";
+// import headshot from "../Images/arnold.jpg";
+// import jpn from "../Images/devin_jpn.jpeg";
+
 export default function About() {
   return (
     <div className="about-page">
       <h1>A Little About Me...</h1>
       <div className="about-wrapper">
-        <img className="headshot" src={jpn} alt="headshot" />
+        <img className="headshot" src='https://devinarnold-website-content.s3.us-east-2.amazonaws.com/devin_jpn.jpeg' alt="headshot" />
         <p>
           I am a Geography nerd turned developer nerd. I started my career
           building interactive GIS maps and spatial tools and quickly fell in
@@ -16,9 +16,9 @@ export default function About() {
           dedicated to empowering people and causes I care about through
           software development.
         </p>
-        <Link to="/files/Devin Arnold.pdf" target="_blank" download>
-          Download Resume
-        </Link>
+        <a href="https://devinarnold-website-content.s3.us-east-2.amazonaws.com/Devin_Arnold_Resume+.pdf" target="_blank"  rel='noreferrer'>
+          View Resume
+        </a>
       </div>
     </div>
   );
