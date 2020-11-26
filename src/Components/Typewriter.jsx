@@ -65,7 +65,6 @@ export default function TypeWriter({ messages, heading }) {
 
   return (
     <h1 className = 'typewriter'>
-      {heading}&nbsp;
         <span>{state.text}</span>
       <span id="cursor" />
     </h1>

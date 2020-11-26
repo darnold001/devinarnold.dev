@@ -13,9 +13,11 @@ export default function WelcomeModal(props) {
           heading={"About Me:"}
           messages={[
             "I am a full stack developer.",
-            "I love architecture.",
+            "I love writing in React.",
+            "I  am a technology junkie.",
             "I love design.",
             "I currently live in Denver, Colorado.",
+            "I love learning."
           ]}
         />
         <NavLink to="/about" onClick={showNav}>
