@@ -9,6 +9,7 @@ export default function WelcomeModal(props) {
   return (
     <div className="welcome-modal">
       <div className="modal-wrapper">
+        <img src='https://devinarnold-website-content.s3.us-east-2.amazonaws.com/Devin+Arnold+Logo_medium.png' alt='Devin Arnold Logo'></img>
         <TypeWriter
           heading={"About Me:"}
           messages={[

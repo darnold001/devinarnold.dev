@@ -12,7 +12,7 @@ function Navigation() {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
   const links = routes.map(({ to, label }) => {
     return (
-      <NavLink strict exact to={to} key={to} >
+      <NavLink strict exact to={to} key={to}>
         {label}
       </NavLink>
     );
@@ -20,6 +20,10 @@ function Navigation() {
 
   return (
     <div className="nav-menu">
+      <img
+        src="https://devinarnold-website-content.s3.us-east-2.amazonaws.com/DA+logo_small.png"
+        alt="Devin Arnold Logo"
+      />
       <div className="nav-menu-hamburger">
         <HamburgerMenu
           isOpen={hamburgerOpen}
