@@ -92,7 +92,7 @@ p {
   margin-left: 2rem;
   margin-top: 2.2rem;
   float: left;
-  opacity: 40% !important;
+  /* opacity: 40% !important; */
 }
 
 .nav-menu-hamburger {
@@ -148,7 +148,7 @@ button,
 
 .modal-wrapper img{
   width: 24rem;
-  opacity: 11% !important;
+  /* opacity: 11% !important;÷ */
 }
 .modal-wrapper {
   text-align: center;
@@ -165,7 +165,7 @@ button,
 .nav-footer .footer-icon#gitlab {
   width: 30px;
   margin: 20px;
-  opacity: 44% !important;
+  /* opacity: 44% !important; */
 }
 
 .about-wrapper:hover {
