@@ -148,7 +148,7 @@ button,
 
 .modal-wrapper img{
   width: 24rem;
-  opacity: 10%;
+  opacity: 11%;
 }
 .modal-wrapper {
   text-align: center;
@@ -165,7 +165,7 @@ button,
 .nav-footer .footer-icon#gitlab {
   width: 30px;
   margin: 20px;
-  opacity: 40%;
+  opacity: 44%;
 }
 
 .about-wrapper:hover {
