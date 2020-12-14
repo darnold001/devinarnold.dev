@@ -6,31 +6,30 @@ export default function ContactForm(props) {
   const [phoneNumb, setPhoneNumb] = useState("");
   const [message, setMessage] = useState("");
 
-  function postForm(formResponse) {
-    console.log(formResponse, 'form response')
+  function postForm() {
     try {
       fetch("https://pure-oasis-43533.herokuapp.com/api/v1/users", {
         method: "POST",
-        mode: 'cors',
-        body: JSON.stringify(formResponse),
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+        },
+        body: JSON.stringify({
+          name: name,
+          username: email,
+          phone: phoneNumb,
+          comment: message,
+        }),
       });
     } catch (err) {
       console.error("there was an error with your request", err);
     }
   }
-  function handleSubmit(e) {
-    // e.preventDefault()
-    let obj = {
-      name: name,
-      username: email,
-      phone: phoneNumb,
-      comment: message,
-    };
-    postForm(obj)
-  }
+
 
   return (
-    <form className="contact-form" onSubmit={handleSubmit}>
+    <form className="contact-form" onSubmit={postForm}>
       <label>
         What is your Name?
         <br />
