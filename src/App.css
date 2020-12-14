@@ -321,7 +321,8 @@ button,
   }
  
   .nav-footer {
-    margin-left: 22%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .about-wrapper a {

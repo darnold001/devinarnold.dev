@@ -11,6 +11,7 @@ import ComingSoon from './Components/comingSoon'
 
 
 function App() {
+  const myRef = React.createRef()
   const [showNav, setShowNav] = React.useState(true)
   const routes = [
     { path: '/', name: 'Home', Component: Welcome },
@@ -30,6 +31,7 @@ function App() {
                   in={match != null}
                   timeout={300}
                   classNames="page"
+                  ref={myRef}
                   unmountOnExit
                 >
                   <div className="page">
