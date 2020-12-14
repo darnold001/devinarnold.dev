@@ -7,7 +7,6 @@ export default function ContactForm(props) {
   const [message, setMessage] = useState("");
 
   function postForm(e) {
-    e.preventDefault()
     try {
       fetch("https://pure-oasis-43533.herokuapp.com/api/v1/users", {
         method: "POST",
