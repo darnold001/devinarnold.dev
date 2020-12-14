@@ -6,13 +6,21 @@ export default function ContactForm(props) {
   const [phoneNumb, setPhoneNumb] = useState("");
   const [message, setMessage] = useState("");
 
+  function resetForm() {
+    setName("");
+    setEmail("");
+    setPhoneNumb("");
+    setMessage("");
+  }
+
   function postForm(e) {
+    e.preventDefault();
     try {
       fetch("https://pure-oasis-43533.herokuapp.com/api/v1/users", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Accept": "application/json",
+          Accept: "application/json",
         },
         body: JSON.stringify({
           name: name,
@@ -20,12 +28,14 @@ export default function ContactForm(props) {
           phone: phoneNumb,
           comment: message,
         }),
+      }).then((resp) => {
+        resetForm();
+        console.log('reset isnt firing', resp);
       });
     } catch (err) {
       console.error("there was an error with your request", err);
     }
   }
-
 
   return (
     <form className="contact-form" onSubmit={postForm}>
