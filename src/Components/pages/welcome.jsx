@@ -5,6 +5,7 @@ export default function WelcomeModal(props) {
   const { showNav } = props;
   useEffect(() => {
     showNav();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <div className="welcome-modal">
