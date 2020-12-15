@@ -5,6 +5,7 @@ export default function ContactForm(props) {
   const [email, setEmail] = useState("");
   const [phoneNumb, setPhoneNumb] = useState("");
   const [message, setMessage] = useState("");
+  const { modalTimer } = props;
 
   function resetForm() {
     setName("");
@@ -29,12 +30,14 @@ export default function ContactForm(props) {
           comment: message,
         }),
       }).then((resp) => {
-        resetForm();
-        console.log('reset isnt firing', resp);
+        if (resp.status !== 200)
+          console.error("There was an error in form reqest");
       });
     } catch (err) {
       console.error("there was an error with your request", err);
     }
+    modalTimer();
+    resetForm();
   }
 
   return (
@@ -42,25 +45,41 @@ export default function ContactForm(props) {
       <label>
         What is your Name?
         <br />
-        <input type="text" onChange={(e) => setName(e.target.value)} />
+        <input
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
       </label>
       <br />
       <label>
         What is your Email?
         <br />
-        <input type="text" onChange={(e) => setEmail(e.target.value)} />
+        <input
+          type="text"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
       </label>
       <br />
       <label>
         What is your Phone Number?
         <br />
-        <input type="tel" onChange={(e) => setPhoneNumb(e.target.value)} />
+        <input
+          type="tel"
+          value={phoneNumb}
+          onChange={(e) => setPhoneNumb(e.target.value)}
+        />
       </label>
       <br />
       <label>
         What would you like to say?
         <br />
-        <textarea type="text" onChange={(e) => setMessage(e.target.value)} />
+        <textarea
+          type="text"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+        />
       </label>
       <br />
       <input id="submit-button" type="submit" />
