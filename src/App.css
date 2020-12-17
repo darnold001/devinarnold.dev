@@ -35,6 +35,7 @@ p {
 }
 
 .page {
+  position: relative;
   left: 15px;
   right: 15px;
 }
@@ -87,7 +88,7 @@ p {
   height: 5rem;
 }
 
-.nav-menu img{
+.nav-menu img {
   width: 4rem;
   margin-left: 2rem;
   margin-top: 2.2rem;
@@ -130,7 +131,7 @@ button,
   height: 100vh;
 }
 
-.welcome-modal h1{
+.welcome-modal h1 {
   margin-top: 11rem;
 }
 
@@ -146,7 +147,7 @@ button,
   text-decoration: none;
 }
 
-.modal-wrapper img{
+.modal-wrapper img {
   width: 24rem;
   /* opacity: 11% !important;÷ */
 }
@@ -205,7 +206,6 @@ button,
   font-size: 0.9rem;
 }
 
-
 .contact-form input#submit-button {
   margin-top: 20px;
   width: 92px;
@@ -218,43 +218,152 @@ button,
   font-size: 1.2rem;
 }
 
-.contact .modal{
+.contact .modal {
   position: absolute;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 100vh;
   background-color: white;
-  opacity: .9;
+  opacity: 0.9;
   transition: width 0.5s, height 0.5s, opacity 0.5s 0.5s;
 }
 
-
-
-.contact .modal-window{
+.contact .modal-window {
   position: absolute;
   width: 80vw;
   height: 40vh;
   background-color: white;
   margin-left: 10vw;
   margin-top: 30vh;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   border: 1px solid white;
   text-align: center;
 }
 
-.modal-window h3{
+.modal-window h3 {
   color: black;
   font-size: 2.8rem;
   color: bold;
 }
-
 
 .coming-soon h1 {
   text-align: center;
   margin-top: 15rem;
   font-size: 6rem;
 }
+
+.projects {
+  min-height: 78vh;
+}
+
+.projects .card-wrapper {
+  height: 100%;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  display: grid;
+  margin: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 19rem));
+  justify-content: center;
+}
+
+.projects .projects-card {
+  height: 15rem;
+  width: 19rem;
+  border: 1px solid white;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.projects-card h4 {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 0rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.projects-card:hover h4 {
+  border-top: grey;
+  background-color: white;
+  color: black;
+}
+.projects-card div {
+  overflow: hidden;
+  height: 12.8rem;
+}
+
+.projects-card img {
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+}
+
+.projects-card:hover img {
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  filter: none;
+  filter: none; /* IE 6-9 */
+}
+
+.projects-card img {
+  width: 22rem;
+}
+
+.projects-modal-wrapper{
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 88vh;
+  background-color: rgba(0, 0, 0, 0.863);
+}
+.projects-modal-wrapper .projects-info-modal{
+  margin-left: auto;
+  margin-right: auto;
+  width: 30rem;
+  height: auto;
+  margin-top: 2rem;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.863);
+  border-radius: .25rem;
+  padding: 5px;
+}
+
+.projects-info-modal div{
+  width: 100%;
+  height: 56%;
+  margin-top: 1rem;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.projects-info-modal div img{
+  height: 20rem;
+  border: 1px solid black;
+  border-radius: .5rem;
+  margin-left: 4.5%;
+}
+
+.projects-info-modal p{
+color: black;
+width: 95%;
+margin-left: 2.5%;
+text-align:justify;
+}
+
+.projects-info-modal h4{
+  color: black;
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 0rem;
+  margin-top: .25rem;
+  }
+
+
 @media only screen and (min-width: 600px) {
   .about-wrapper {
     min-width: 58rem;
@@ -351,7 +460,7 @@ button,
   .nav-menu-hamburger {
     width: 45px;
   }
- 
+
   .nav-footer {
     margin-left: auto;
     margin-right: auto;
@@ -378,26 +487,24 @@ button,
     margin: 0.5rem;
   }
 
-  .link-container{
-   display: hidden
+  .link-container {
+    display: hidden;
   }
 
-  .contact{
+  .contact {
     padding: 5px;
   }
 
-  .contact h3{
-    margin: .5rem;
+  .contact h3 {
+    margin: 0.5rem;
     padding: 0rem;
     font-size: 1rem;
   }
 
-
-
-  .contact-form{
+  .contact-form {
     margin-top: 2rem;
     border: 1px solid white;
-    border-radius: .25rem;
+    border-radius: 0.25rem;
     padding: 1rem;
     text-align: center;
   }

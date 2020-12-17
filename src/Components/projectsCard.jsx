@@ -1,11 +1,14 @@
 import React from "react";
 export default function ProjectCard(props) {
-  const { cardInfo } = props;
+  const { cardInfo, setModal } = props;
+  console.log(cardInfo.name);
   return (
-    <div className="projects-card">
-      <img src={`${cardInfo.thumbnail}`} alt="project thumbnail" />
+    <div className="projects-card" onClick ={() => setModal(cardInfo)}>
+      <div>
+        <img src={`${cardInfo.thumbnail}`} alt="project thumbnail" />
+      </div>
       <h4>{cardInfo.name}</h4>
-      <p>{cardInfo.blurb}</p>
+      {/* <p>{cardInfo.blurb}</p> */}
     </div>
   );
 }
