@@ -20,7 +20,7 @@ function App() {
     { path: '/contact', name: 'Contact', Component: Contact },
     { path: '/projects', name: 'Projects', Component: Projects},
   ]
-
+  const nodeRef = React.useRef(null);
   return (
     <div className="App">
           <Router>
@@ -29,6 +29,7 @@ function App() {
             <Route key={path} exact path={path}>
               {({ match }) => (
                 <CSSTransition
+                  nodeRef={nodeRef}
                   in={match != null}
                   timeout={300}
                   classNames="page"
