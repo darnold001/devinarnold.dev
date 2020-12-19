@@ -348,7 +348,7 @@ button,
   margin-left: 4.5%;
 }
 
-.projects-info-modal div img#BreweryFinder{
+.projects-info-modal div img#BreweryFinder {
   margin-left: 3.8rem;
 }
 
@@ -510,5 +510,36 @@ button,
     border-radius: 0.25rem;
     padding: 1rem;
     text-align: center;
+  }
+
+  .projects .card-wrapper {
+    margin-left: 1.5rem;
+  }
+
+  .projects-modal-wrapper .projects-info-modal {
+    width: 16rem;
+  }
+
+  .projects-info-modal div img {
+    height: 11rem;
+  }
+
+  .projects-info-modal div img#BreweryFinder {
+    margin-left: 1.8rem;
+  }
+
+  .nav-footer {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .projects-modal-wrapper {
+    position: absolute;
+    top: -9rem;
+    width: 100vw;
+    height: 114%;
+    background-color: rgba(0, 0, 0, 0.863);
   }
 }
