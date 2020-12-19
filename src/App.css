@@ -314,26 +314,26 @@ button,
   width: 22rem;
 }
 
-.projects-modal-wrapper{
+.projects-modal-wrapper {
   position: absolute;
-  top: 0;
+  top: -9rem;
   width: 100vw;
-  height: 88vh;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.863);
 }
-.projects-modal-wrapper .projects-info-modal{
+.projects-modal-wrapper .projects-info-modal {
   margin-left: auto;
   margin-right: auto;
   width: 30rem;
   height: auto;
-  margin-top: 2rem;
+  margin-top: 10rem;
   border: 1px solid white;
   background-color: rgba(255, 255, 255, 0.863);
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   padding: 5px;
 }
 
-.projects-info-modal div{
+.projects-info-modal div {
   width: 100%;
   height: 56%;
   margin-top: 1rem;
@@ -341,28 +341,31 @@ button,
   justify-content: center;
 }
 
-.projects-info-modal div img{
+.projects-info-modal div img {
   height: 20rem;
   border: 1px solid black;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   margin-left: 4.5%;
 }
 
-.projects-info-modal p{
-color: black;
-width: 95%;
-margin-left: 2.5%;
-text-align:justify;
+.projects-info-modal div img#BreweryFinder{
+  margin-left: 3.8rem;
 }
 
-.projects-info-modal h4{
+.projects-info-modal p {
+  color: black;
+  width: 95%;
+  margin-left: 2.5%;
+  text-align: justify;
+}
+
+.projects-info-modal h4 {
   color: black;
   text-align: center;
   font-size: 1.6rem;
   margin: 0rem;
-  margin-top: .25rem;
-  }
-
+  margin-top: 0.25rem;
+}
 
 @media only screen and (min-width: 600px) {
   .about-wrapper {

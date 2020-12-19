@@ -5,7 +5,7 @@ export default function ProjectCard(props) {
   return (
     <div className="projects-card" onClick ={() => setModal(cardInfo)}>
       <div>
-        <img src={`${cardInfo.thumbnail}`} alt="project thumbnail" />
+        <img src={`${cardInfo.thumbnail}`} alt="project thumbnail" id={`${cardInfo.name}`}/>
       </div>
       <h4>{cardInfo.name}</h4>
       {/* <p>{cardInfo.blurb}</p> */}
