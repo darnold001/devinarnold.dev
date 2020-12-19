@@ -16,7 +16,8 @@ export default function Projects(props) {
     {
       name: "E-commerce App",
       link: "ECommerce",
-      thumbnail: "https://devinarnold-website-content.s3.us-east-2.amazonaws.com/ecommerce.png",
+      thumbnail:
+        "https://devinarnold-website-content.s3.us-east-2.amazonaws.com/ecommerce.png",
       blurb:
         "Flatiron School (Module 2 Project) - A very simple eCommerce site built with a Ruby on Rails MVC",
     },
@@ -49,17 +50,20 @@ export default function Projects(props) {
       git: "https://github.com/darnold001/Colorado_ActivityFinder",
     },
   ];
-  console.log("called");
   return (
     <>
       <div className="projects">
         <div className="card-wrapper">
           {projects.reverse().map((p) => {
-            return <ProjectCard cardInfo={p} setModal={setModal} />;
+            return (
+              <ProjectCard key={p.name} cardInfo={p} setModal={setModal} />
+            );
           })}
         </div>
       </div>
-      {modal !== undefined && <ProjectInfoModal modal={modal} setModal = {setModal}/>}
+      {modal !== undefined && (
+        <ProjectInfoModal modal={modal} setModal={setModal} />
+      )}
     </>
   );
 }

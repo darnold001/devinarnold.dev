@@ -1,5 +1,4 @@
 import React from "react";
-import {removeSpaces} from './helperFunctions'
 export default function ProjectsInfoModal(props) {
   return (
     <div className="projects-modal-wrapper" onClick={() => props.setModal(undefined)}>
