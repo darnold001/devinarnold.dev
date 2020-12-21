@@ -46,7 +46,7 @@ export default function Projects(props) {
       thumbnail:
         "https://devinarnold-website-content.s3.us-east-2.amazonaws.com/Rental%2BBuddy+(1).jpg",
       blurb:
-        "Flatiron School (Module 5 Project) - An app to help facilitate maintenance requests betweeen property owners and tenants, as well as allows tenants to pay rent and keeps an active accounting for property owners. This app is built on a decoupled architecture with a React front end and a microservices back end built with GoLang and Rails. This app also levreges the Google Maps API, Twillio API and Stripe API.",
+        "Flatiron School (Module 5 Project) - An app to help facilitate maintenance requests betweeen property owners and tenants, as well as allows tenants to pay rent and keeps an active accounting for property owners. This app is built on a decoupled architecture with a React front end and a microservices back end built with GoLang and Rails. This app also leverages the Google Maps API, Twillio API and Stripe API.",
       git: "https://github.com/darnold001/Colorado_ActivityFinder",
     },
   ];

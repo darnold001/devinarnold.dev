@@ -1,6 +1,7 @@
 import linkedin from ".././Components/Images/linkedin.png";
 import github from ".././Components/Images/github.png";
 import gitlab from ".././Components/Images/gitlab.png";
+import instagram from ".././Components/Images/insta.png";
 
 export default function Footer() {
   return (
@@ -10,7 +11,6 @@ export default function Footer() {
         rel="noreferrer"
         href="https://www.linkedin.com/in/devin-arnold-a7539a52/"
       >
-        {" "}
         <img
           className="footer-icon"
           id="linkedin"
@@ -32,6 +32,18 @@ export default function Footer() {
           id="gitlab"
           src={gitlab}
           alt="GitLab Icon"
+        />
+      </a>
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://www.instagram.com/iamdarnld/"
+      >
+        <img
+          className="footer-icon"
+          id="instagram"
+          src={instagram}
+          alt="Instagram Icon"
         />
       </a>
     </footer>

@@ -148,12 +148,14 @@ button,
 }
 
 .modal-wrapper img {
-  width: 24rem;
+  width: 16rem;
+  margin-top: 4rem;
   /* opacity: 11% !important;÷ */
 }
 .modal-wrapper {
   text-align: center;
   padding-top: 2rem;
+  min-width: 51rem;
 }
 
 .nav-footer {
@@ -161,6 +163,7 @@ button,
   padding-bottom: 1rem;
 }
 
+.nav-footer .footer-icon#instagram,
 .nav-footer .footer-icon#github,
 .nav-footer .footer-icon#linkedin,
 .nav-footer .footer-icon#gitlab {
@@ -328,7 +331,7 @@ button,
   height: auto;
   margin-top: 10rem;
   border: 1px solid white;
-  background-color: rgba(255, 255, 255, 0.863);
+  background-color: rgba(255, 255, 255, 0.963);
   border-radius: 0.25rem;
   padding: 5px;
 }
@@ -539,7 +542,7 @@ button,
     position: absolute;
     top: -9rem;
     width: 100vw;
-    height: 114%;
+    height: 140%;
     background-color: rgba(0, 0, 0, 0.863);
   }
 }
