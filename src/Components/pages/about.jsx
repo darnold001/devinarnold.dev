@@ -16,7 +16,7 @@ export default function About() {
           dedicated to empowering people and causes I care about through
           software development. I am currently working as a Developer at Sawatch Labs.
         </p>
-        <a href="https://devinarnold-website-content.s3.us-east-2.amazonaws.com/Devin_Arnold_Resume+.pdf" target="_blank"  rel='noreferrer'>
+        <a href="https://devinarnold-website-content.s3.us-east-2.amazonaws.com/DevinArnoldResume.pdf" target="_blank"  rel='noreferrer'>
           View Resume
         </a>
       </div>
