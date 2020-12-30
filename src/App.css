@@ -155,7 +155,6 @@ button,
 .modal-wrapper {
   text-align: center;
   padding-top: 2rem;
-  min-width: 51rem;
 }
 
 .nav-footer {
@@ -399,6 +398,10 @@ button,
     margin-left: 9rem;
   }
 
+  .modal-wrapper{
+    min-width: 51rem;
+  }
+
   .about-wrapper a {
     grid-area: button;
     margin-top: 0rem;
@@ -449,7 +452,7 @@ button,
     width: 90%;
     margin-left: 5%;
     margin-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
@@ -460,7 +463,7 @@ button,
     height: auto;
   }
   .headshot {
-    margin-left: 2rem;
+    margin-left: 4rem;
     height: 20rem;
     border-radius: 0.25rem;
   }
@@ -474,9 +477,9 @@ button,
   }
 
   .about-wrapper a {
-    margin-left: 5rem;
+    margin-left: 7rem;
     margin-top: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
   }
 
   .coming-soon h1 {
