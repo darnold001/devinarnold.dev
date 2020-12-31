@@ -17,13 +17,15 @@ export default function WelcomeModal(props) {
         <TypeWriter
           heading={"About Me:"}
           messages={[
-            "I am a full stack developer.",
             "I love writing in React.",
+            "I enjoy writing in Python.",
+            "I enjoy writing in Ruby.",
+            "I am a full stack developer.",
             "I am a GIS nerd",
-            "I  am a technology junkie.",
             "I love design.",
             "I currently live in Denver, Colorado.",
-            "I love learning.",
+            "I am a technology junkie.",
+
           ]}
         />
         <NavLink to="/about" onClick={showNav}>
