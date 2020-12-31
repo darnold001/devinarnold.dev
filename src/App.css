@@ -88,6 +88,15 @@ p {
   height: 5rem;
 }
 
+.pageNotFound{
+  height: 56vh;
+}
+.pageNotFound p {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 9rem;
+}
+
 .nav-menu img {
   width: 4rem;
   margin-left: 2rem;
@@ -398,7 +407,7 @@ button,
     margin-left: 9rem;
   }
 
-  .modal-wrapper{
+  .modal-wrapper {
     min-width: 51rem;
   }
 
