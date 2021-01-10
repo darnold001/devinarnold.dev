@@ -25,7 +25,7 @@ export default function About() {
           </p>
           <a
           className = 'resume-download'
-            href="https://devinarnold-website-content.s3.us-east-2.amazonaws.com/DevinArnoldResume.pdf"
+            href="https://devinarnold-website-content.s3.us-east-2.amazonaws.com/Devin+Arnold's+Resume.pdf"
             target="_blank"
             rel="noreferrer"
           >
