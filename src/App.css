@@ -465,7 +465,7 @@ button,
   }
   .about-blurb{
     width: 90%;
-    padding-top: 5rem;
+    padding-top: 2rem;
   }
   .about-page p {
     font-size: 1rem;
@@ -490,9 +490,10 @@ button,
     height: auto;
   }
   .headshot {
-    margin-left: 4rem;
+    margin-left: 3.2rem;
     height: 20rem;
     border-radius: 0.25rem;
+    margin-top: 3rem;
   }
   .nav-menu-hamburger {
     width: 45px;
