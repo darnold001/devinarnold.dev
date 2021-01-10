@@ -18,10 +18,10 @@ export default function WelcomeModal(props) {
           heading={"About Me:"}
           messages={[
             "I love writing in React.",
-            "I enjoy writing in Python.",
-            "I enjoy writing in Ruby.",
+            "I love writing in Python.",
+            "I love writing in Ruby.",
             "I am a full stack developer.",
-            "I am a GIS nerd",
+            "I am a huge GIS nerd.",
             "I love design.",
             "I currently live in Denver, Colorado.",
             "I am a technology junkie.",
