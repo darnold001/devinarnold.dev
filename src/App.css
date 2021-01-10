@@ -193,13 +193,19 @@ button,
   filter: none;
   filter: none; /* IE 6-9 */
 }
-.about-wrapper p {
-  width: 80%;
-  font-size: 1.6rem;
-  margin-left: 10%;
+
+.about-blurb{
+  width: 75%;
+}
+
+.about-wrapper .about-blurb p {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  margin-left: 4%;
   margin-bottom: 1.5rem;
   margin-top: 0rem;
   text-align: justify;
+  padding-bottom: 1.8rem;
 }
 
 .contact a {
@@ -389,15 +395,12 @@ button,
     min-width: 58rem;
     display: grid;
     width: 80%;
-    margin-left: 10%;
+    margin-left: 15%;
     margin-top: 4rem;
     margin-bottom: 2rem;
     padding-bottom: 2rem;
-    grid-template-areas:
-      "photo blurb"
-      "button button";
-    grid-template-columns: 36% 64%;
-    -webkit-filter: grayscale(100%);
+    grid-template-areas: "photo blurb";
+    grid-template-columns: 40% 60%;
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -405,9 +408,13 @@ button,
   }
 
   .headshot {
+    grid-area: photo;
     height: 500px;
     border-radius: 0.25rem;
   }
+
+
+
   .about-page h1 {
     margin-top: 2rem;
     margin-left: 9rem;
@@ -417,13 +424,15 @@ button,
     min-width: 51rem;
   }
 
-  .about-wrapper a {
+  .about-blurb a {
     grid-area: button;
     margin-top: 0rem;
-    margin-left: 53%;
+    margin-left: 33%;
     width: 12rem;
     padding: 1rem;
   }
+
+
 
   .contact-page {
     border: 1px solid white;
@@ -454,7 +463,10 @@ button,
     font-size: 1.4rem;
     margin-left: 7%;
   }
-
+  .about-blurb{
+    width: 90%;
+    padding-top: 2rem;
+  }
   .about-page p {
     font-size: 1rem;
     margin-top: 3rem;
@@ -478,9 +490,10 @@ button,
     height: auto;
   }
   .headshot {
-    margin-left: 4rem;
+    margin-left: 3.2rem;
     height: 20rem;
     border-radius: 0.25rem;
+    margin-top: 3rem;
   }
   .nav-menu-hamburger {
     width: 45px;
