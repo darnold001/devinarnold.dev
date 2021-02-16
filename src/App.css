@@ -347,7 +347,7 @@ button,
 .projects-modal-wrapper .projects-info-modal {
   margin-left: auto;
   margin-right: auto;
-  width: 30rem;
+  width: 38rem;
   height: auto;
   margin-top: 10rem;
   border: 1px solid white;
@@ -356,21 +356,52 @@ button,
   padding: 5px;
 }
 
-.projects-info-modal div {
-  width: 100%;
-  height: 56%;
-  margin-top: 1rem;
-  overflow: hidden;
-  justify-content: center;
+.carousel .thumbs-wrapper{
+  margin: 0rem;
+  height: 0rem;
 }
 
+.projects-info-modal div .carousel-root{
+width: 90%;
+height: 18rem;
+margin-left: 5%;
+margin-top: 3rem;
+border-radius: .25rem;
+border: 1px solid grey;
+}
 .projects-info-modal div img {
-  height: 20rem;
   border: 1px solid black;
-  border-radius: 0.5rem;
-  margin-left: 4.5%;
+  /* border-radius: 0.5rem; */
+  width: 90%;
+  margin-left: 5%;
+  margin-right: auto;
+  margin-top: 1rem;
+}
+.projects-info-modal div .carousel{
+margin-left: 0rem;
+border-radius: none;
+margin-top: 0rem;
 }
 
+.slide.selected{
+  height:auto;
+}
+
+p.carousel-status{
+  display: hidden;
+  opacity: 0%;
+}
+
+.carousel-image{
+height: 18rem;
+
+}
+div.carousel.carousel-slider{
+  border-radius: .25rem;
+}
+div.carosel-image{
+  width:90%;
+}
 .projects-info-modal div img#BreweryFinder {
   margin-left: 3.8rem;
 }
@@ -389,6 +420,13 @@ button,
   margin: 0rem;
   margin-top: 0.25rem;
 }
+
+
+.projects-info-modal .closeIcon{
+float: right;
+height:25px;
+}
+
 
 @media only screen and (min-width: 600px) {
   .about-wrapper {
@@ -453,6 +491,8 @@ button,
   .coming-soon {
     height: 32rem;
   }
+ 
+
 }
 @media only screen and (max-width: 600px) {
   body {
@@ -581,4 +621,5 @@ button,
     height: 140%;
     background-color: rgba(0, 0, 0, 0.863);
   }
+
 }
