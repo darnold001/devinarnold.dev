@@ -60,7 +60,7 @@ export default function Projects(props) {
       thumbnail:
         "https://devinarnold-website-content.s3.us-east-2.amazonaws.com/sawatch-dashboard-base.png",
       blurb:
-        "Designed and updated major aspects of Sawatch's Analytics dashboard to expose Administators and users with the ability to quickly update  and assign product licenses. I also led the effort in redesigning the UI as well as update all the code to ES6 sybntax and React Hooks to durasticaly reduce the amount of unnecessary re-renders.",
+        "Designed and updated major aspects of Sawatch's Analytics dashboard to expose Administators and users with the ability to quickly update  and assign product licenses. I also led the effort in redesigning the UI as well as update all the code to ES6 syntax and React Hooks to durasticaly reduce the amount of unnecessary re-renders.",
       git: "N/A",
       photos: [
         "https://devinarnold-website-content.s3.us-east-2.amazonaws.com/dashboard-dev-settings.png",
