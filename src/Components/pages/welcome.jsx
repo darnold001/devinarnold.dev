@@ -7,6 +7,23 @@ export default function WelcomeModal(props) {
     showNav();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+  function strikeThrough(text){
+    return(<span id='strikethrough'>{text}</span>)
+  }
+
+  const messages = [
+    
+      // "I write in React.",
+      // "I love write in Python.",
+      // "I love write in Ruby.",
+      // "I am a full stack developer.",
+      // "I am a huge GIS nerd.",
+      // "I love design.",
+      `I currently live in ${strikeThrough('Denver, Colorado')} Portland, Oregon.`,
+      "I am a technology junkie.",
+
+    
+  ]
   return (
     <div className="welcome-modal">
       <div className="modal-wrapper">
@@ -16,17 +33,7 @@ export default function WelcomeModal(props) {
         ></img>
         <TypeWriter
           heading={"About Me:"}
-          messages={[
-            "I love writing in React.",
-            "I love writing in Python.",
-            "I love writing in Ruby.",
-            "I am a full stack developer.",
-            "I am a huge GIS nerd.",
-            "I love design.",
-            "I currently live in Denver, Colorado.",
-            "I am a technology junkie.",
-
-          ]}
+          messages={messages}
         />
         <NavLink to="/about" onClick={showNav}>
           Learn More
