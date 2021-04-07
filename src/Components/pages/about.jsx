@@ -19,7 +19,7 @@ export default function About() {
             fell in love with writing code. After working in the GIS industry
             for more than 8 years, I decided to go back to school to pursue a
             full time career in software development. I am currently working as
-            a Geospatial Developer at The Gartrell Group in Portland, Oregon. I am happy jumping
+            a consultant in Portland, Oregon. I am happy jumping
             all over the stack from writing analytics modules in Python and SQL
             to designing wireframes and building front ends in React.
           </p>
