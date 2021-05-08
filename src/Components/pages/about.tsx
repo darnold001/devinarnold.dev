@@ -1,8 +1,6 @@
 import React from "react";
-// import headshot from "../Images/arnold.jpg";
-// import jpn from "../Images/devin_jpn.jpeg";
 
-export default function About() {
+export const About = ()  => {
   return (
     <div className="about-page">
       <h1>A Little About Me...</h1>

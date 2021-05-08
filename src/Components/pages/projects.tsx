@@ -1,9 +1,16 @@
 import React, { useState } from "react";
 import ProjectCard from "../projectsCard";
 import ProjectInfoModal from "../projectsInfoModal";
-export default function Projects(props) {
+export const Projects = () => {
   const [modal, setModal] = useState(undefined);
-  const projects = [
+  const projects: {
+    name: string;
+    link: string;
+    thumbnail: string;
+    blurb: string;
+    git: any;
+    photos: (string)[];
+  }[] = [
     {
       name: "Brewery Finder",
       link: "Brewery-Finder",
@@ -17,6 +24,7 @@ export default function Projects(props) {
     {
       name: "E-commerce App",
       link: "ECommerce",
+      git: "",
       thumbnail:
         "https://devinarnold-website-content.s3.us-east-2.amazonaws.com/ecommerce.png",
       blurb:
@@ -97,4 +105,4 @@ export default function Projects(props) {
       )}
     </>
   );
-}
+};

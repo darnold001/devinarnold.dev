@@ -2,8 +2,9 @@ import linkedin from ".././Components/Images/linkedin.png";
 import github from ".././Components/Images/github.png";
 import gitlab from ".././Components/Images/gitlab.png";
 import instagram from ".././Components/Images/insta.png";
+import React from "react";
 
-export default function Footer() {
+export const Footer = () => {
   return (
     <footer className="nav-footer">
       <a

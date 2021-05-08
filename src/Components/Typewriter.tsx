@@ -1,13 +1,20 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React  from 'react';
-const { useState, useEffect } = React;
+import React, { useState, useEffect } from "react";
 
 const CONSTANTS = {
   DELETING_SPEED: 30,
   TYPING_SPEED: 150,
+};
+
+interface TypeWriterProps {
+  messages: string[];
+  heading: string;
 }
 
-export default function TypeWriter({ messages, heading }) {
+export default function TypeWriter(props: TypeWriterProps) {
+
+  const {messages, heading} = props;
+
   const [state, setState] = useState({
     text: "",
     message: "",
@@ -17,12 +24,12 @@ export default function TypeWriter({ messages, heading }) {
   });
 
   useEffect(() => {
-    let timer = "";
+    let timer:any;
     const handleType = () => {
-      setState(cs => ({
+      setState((cs) => ({
         ...cs, // cs means currentState
         text: getCurrentText(cs),
-        typingSpeed: getTypingSpeed(cs)
+        typingSpeed: getTypingSpeed(cs),
       }));
       timer = setTimeout(handleType, state.typingSpeed);
     };
@@ -33,40 +40,40 @@ export default function TypeWriter({ messages, heading }) {
   useEffect(() => {
     if (!state.isDeleting && state.text === state.message) {
       setTimeout(() => {
-        setState(cs => ({
+        setState((cs) => ({
           ...cs,
-          isDeleting: true
-        }))
+          isDeleting: true,
+        }));
       }, 500);
     } else if (state.isDeleting && state.text === "") {
-      setState(cs => ({
+      setState((cs) => ({
         ...cs, // cs means currentState
         isDeleting: false,
         loopNum: cs.loopNum + 1,
-        message: getMessage(cs, messages)
+        message: getMessage(cs, messages),
       }));
     }
   }, [state.text, state.message, state.isDeleting, messages]);
 
-  function getCurrentText(currentState) {
+  function getCurrentText(currentState:any) {
     return currentState.isDeleting
       ? currentState.message.substring(0, currentState.text.length - 1)
       : currentState.message.substring(0, currentState.text.length + 1);
   }
 
-  function getMessage(currentState, data) {
-    return data[Number(currentState.loopNum) % Number(data.length)];
+  function getMessage(currentState:any, messages:any) {
+    return messages[Number(currentState.loopNum) % Number(messages.length)];
   }
 
-  function getTypingSpeed(currentState) {
+  function getTypingSpeed(currentState:any) {
     return currentState.isDeleting
       ? CONSTANTS.TYPING_SPEED
       : CONSTANTS.DELETING_SPEED;
   }
 
   return (
-    <h1 className = 'typewriter'>
-        <span>{state.text}</span>
+    <h1 className="typewriter">
+      <span>{state.text}</span>
       <span id="cursor" />
     </h1>
   );
