@@ -1,7 +1,13 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import TypeWriter from "../Typewriter";
-export default function WelcomeModal(props) {
+
+interface WelcomeProps {
+  showNav: () => void
+}
+
+
+export default function WelcomeModal(props:WelcomeProps) {
   const { showNav } = props;
   useEffect(() => {
     showNav();
@@ -11,7 +17,8 @@ export default function WelcomeModal(props) {
   //   return <span id="strikethrough">{text}</span>;
   // }
 
-  const messages = [
+
+  const messages: (string)[] = [
     "I love to write in React.",
     "I write in Python.",
     "I write in Ruby.",

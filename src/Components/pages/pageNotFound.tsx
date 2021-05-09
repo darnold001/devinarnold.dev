@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function PageNotFound(props){
+export const PageNotFound = () => {
     return(
         <div className = 'pageNotFound'>
             <p>Oops, Page Not Found...</p>

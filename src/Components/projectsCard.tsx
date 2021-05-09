@@ -1,5 +1,13 @@
 import React from "react";
-export default function ProjectCard(props) {
+interface ProjectCardProps{
+  cardInfo: {
+    thumbnail:string
+    name:string
+  };
+  setModal: Function
+}
+
+export default function ProjectCard(props: ProjectCardProps) {
   const { cardInfo, setModal } = props;
   return (
     <div className="projects-card" onClick ={() => setModal(cardInfo)}>
@@ -7,7 +15,6 @@ export default function ProjectCard(props) {
         <img src={`${cardInfo.thumbnail}`} alt="project thumbnail" id={`${cardInfo.name}`}/>
       </div>
       <h4>{cardInfo.name}</h4>
-      {/* <p>{cardInfo.blurb}</p> */}
     </div>
   );
 }

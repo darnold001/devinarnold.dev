@@ -1,10 +1,8 @@
 import React from "react";
-
-export default function ComingSoon(props) {
+export const ComingSoon = () => {
   return (
     <div className="coming-soon">
       <h1>Coming Soon</h1>
-      {/* Should I add a progress bar? */}
     </div>
   );
 }

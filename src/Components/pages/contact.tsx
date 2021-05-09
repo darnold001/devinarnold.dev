@@ -15,7 +15,7 @@ export default function Projects() {
       <div className="contact">
         {showModal && (
           <Modal
-            text={"Thank you for reaching out."}
+            message={"Thank you for reaching out."}
             exitModal={() => setShowModal(false)}
           />
          )}
