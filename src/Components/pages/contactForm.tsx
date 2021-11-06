@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function ContactForm(props) {
+export default function ContactForm(props:{modalTimer: () => void}) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumb, setPhoneNumb] = useState("");
@@ -14,7 +14,7 @@ export default function ContactForm(props) {
     setMessage("");
   }
 
-  function postForm(e) {
+  function postForm(e: any) {
     e.preventDefault();
     try {
       fetch("https://pure-oasis-43533.herokuapp.com/api/v1/users", {
@@ -76,7 +76,6 @@ export default function ContactForm(props) {
         What would you like to say?
         <br />
         <textarea
-          type="text"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />

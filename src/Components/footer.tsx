@@ -3,7 +3,7 @@ import github from ".././Components/Images/github.png";
 import gitlab from ".././Components/Images/gitlab.png";
 import instagram from ".././Components/Images/insta.png";
 
-export default function Footer() {
+ const Footer = () =>  {
   return (
     <footer className="nav-footer">
       <a
@@ -49,3 +49,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+export default Footer

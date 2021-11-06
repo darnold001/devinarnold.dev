@@ -1,5 +1,8 @@
 import React from "react";
-export default function ProjectCard(props) {
+import { CardInfo } from "./Types";
+
+export default function ProjectCard(props:{cardInfo: CardInfo, setModal: (arg0: any) => void } ) {
+
   const { cardInfo, setModal } = props;
   return (
     <div className="projects-card" onClick ={() => setModal(cardInfo)}>
