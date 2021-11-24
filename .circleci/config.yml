@@ -15,12 +15,12 @@ jobs:
           name: Deploy
           command: |
             # 1- Install AWS CLI
-            sudo ln -s /usr/bin/python3 /usr/bin/python
-            curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
-            unzip awscli-bundle.zip
-            sudo apt-get install python3-venv
-            ./awscli-bundle/install -b ~/bin/aws
-            echo 'made it here - Check'
+            # sudo ln -s /usr/bin/python3 /usr/bin/python
+            # curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
+            # unzip awscli-bundle.zip
+            # sudo apt-get install python3-venv
+            # ./awscli-bundle/install -b ~/bin/aws
+            # echo 'made it here - Check'
             # 2- Get the public IP of the current CircleCI runner
             PUBLIC_IP=$(curl ipinfo.io/ip)
             # 3- Get AWS Region# TODO Don't forget to replcae by your own Region
