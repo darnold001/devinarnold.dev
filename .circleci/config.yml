@@ -17,6 +17,7 @@ jobs:
             # 1- Install AWS CLI
             python3 -V
             sudo ln -s /usr/bin/python3 /usr/bin/python
+            apt-get install python3-venv
             curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
             unzip awscli-bundle.zip
             echo 'made it here'
