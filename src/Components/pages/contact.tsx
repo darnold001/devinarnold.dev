@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import ContactForm from "../contactForm";
 import Modal from "../modal";
 export default function Projects() {
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
 
   function modalTimer() {
-    setShowModal(false);
+    setShowModal(true);
     setTimeout(() => {
       setShowModal(false);
     }, 850);
