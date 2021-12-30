@@ -403,11 +403,17 @@ button,
   margin-right: auto;
   width: 55vw;
   height: auto;
+  max-height: 90%;
+  overflow-y: scroll;
   margin-top: 5vh;
   border: 1px solid white;
   background-color: rgba(255, 255, 255, 0.963);
   border-radius: 0.25rem;
   padding: 5px;
+
+  .project-description{
+    overflow-y: scroll;
+  }
 }
 
 .carousel .thumbs-wrapper {
