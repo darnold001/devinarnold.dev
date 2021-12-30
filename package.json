@@ -6,13 +6,19 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.10.3",
+    "@types/react": "^17.0.27",
+    "@types/react-dom": "^17.0.9",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-hamburger-menu": "^1.2.1",
     "react-responsive-carousel": "^3.2.11",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
+    "react-toggle": "^4.1.2",
     "react-transition-group": "4.4.1",
+    "sass": "^1.45.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
@@ -40,6 +46,9 @@
     ]
   },
   "devDependencies": {
-    "typescript": "^4.1.2"
+    "@types/react-hamburger-menu": "0.0.4",
+    "@types/react-router-dom": "^5.3.1",
+    "@types/react-toggle": "^4.0.3",
+    "typescript": "^4.4.3"
   }
 }

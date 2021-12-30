@@ -1,9 +1,18 @@
-import linkedin from ".././Components/Images/linkedin.png";
-import github from ".././Components/Images/github.png";
-import gitlab from ".././Components/Images/gitlab.png";
-import instagram from ".././Components/Images/insta.png";
+import {
+  GITHUB_Black,
+  GITHUB_White,
+  GITLAB_Black,
+  GITLAB_White,
+  INSTAGRAM_Black,
+  INSTAGRAM_White,
+  LINKEDIN_Black,
+  LINKEDIN_White,
+} from "./constants";
+import { useThemeContext } from "./themeContext";
 
-export default function Footer() {
+const Footer = () => {
+  const { dark } = useThemeContext();
+
   return (
     <footer className="nav-footer">
       <a
@@ -14,7 +23,7 @@ export default function Footer() {
         <img
           className="footer-icon"
           id="linkedin"
-          src={linkedin}
+          src={dark ? LINKEDIN_White : LINKEDIN_Black}
           alt="LinkedIn Icon"
         />
       </a>
@@ -22,7 +31,7 @@ export default function Footer() {
         <img
           className="footer-icon"
           id="github"
-          src={github}
+          src={dark ? GITHUB_White : GITHUB_Black}
           alt="GitHub Icon"
         />
       </a>
@@ -30,7 +39,7 @@ export default function Footer() {
         <img
           className="footer-icon"
           id="gitlab"
-          src={gitlab}
+          src={dark ? GITLAB_White : GITLAB_Black}
           alt="GitLab Icon"
         />
       </a>
@@ -42,10 +51,12 @@ export default function Footer() {
         <img
           className="footer-icon"
           id="instagram"
-          src={instagram}
+          src={dark ? INSTAGRAM_White : INSTAGRAM_Black}
           alt="Instagram Icon"
         />
       </a>
     </footer>
   );
-}
+};
+
+export default Footer;
