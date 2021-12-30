@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function ContactForm(props:{modalTimer: () => void}) {
+export default function ContactForm(props: { modalTimer: () => void }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumb, setPhoneNumb] = useState("");
@@ -39,7 +39,9 @@ export default function ContactForm(props:{modalTimer: () => void}) {
     modalTimer();
     resetForm();
   }
-
+  const formComplete = (): boolean => {
+    return name.length > 0 && email.length > 0 && message.length > 0;
+  };
   return (
     <form className="contact-form" onSubmit={postForm}>
       <label>
@@ -81,7 +83,7 @@ export default function ContactForm(props:{modalTimer: () => void}) {
         />
       </label>
       <br />
-      <input id="submit-button" type="submit" />
+      <input id="submit-button" type="submit" disabled={!formComplete()} />
     </form>
   );
 }

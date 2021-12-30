@@ -299,6 +299,12 @@ button,
   padding-left: 10px;
   justify-content: center;
   margin-left: 6px;
+  cursor: pointer;
+}
+
+.contact-form input#submit-button:disabled {
+  color: gray;
+  border-color: gray;
 }
 
 .link-container a {
@@ -772,6 +778,9 @@ div.carosel-image {
 
   .contact a {
     color: black;
+  }
+  .contact-wrapper{
+    border-color: black;
   }
 }
 
