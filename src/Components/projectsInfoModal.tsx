@@ -8,7 +8,7 @@ export default function ProjectsInfoModal(props: {
     <div className="projects-modal-wrapper">
       <div className="projects-info-modal">
         <button className="closeIcon" onClick={() => props.setModal(undefined)}>
-        ✖
+          ✖
         </button>
         <div>
           {props.modal.photos.length > 1 && (
@@ -23,7 +23,9 @@ export default function ProjectsInfoModal(props: {
           )}
         </div>
         <h4>{props.modal.name}</h4>
-        <p>{props.modal.blurb}</p>
+        <div className="project-description">
+          <p>{props.modal.blurb}</p>
+        </div>
       </div>
     </div>
   );
