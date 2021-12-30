@@ -1,16 +1,12 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import HamburgerMenu from "react-hamburger-menu";
-
-const routes = [
-  { to: "/about", label: "About" },
-  { to: "/contact", label: "Contact" },
-  { to: "/projects", label: "Projects" },
-];
-
+import { ROUTES } from "./constants";
+import { useThemeContext } from "./themeContext";
 function Navigation() {
+  const { dark } = useThemeContext();
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
-  const links = routes.map(({ to, label }) => {
+  const links = ROUTES.map(({ to, label }) => {
     return (
       <NavLink strict exact to={to} key={to}>
         {label}
@@ -18,12 +14,10 @@ function Navigation() {
     );
   });
 
+  console.log(dark, "checking dark");
+
   return (
     <div className="nav-menu">
-      <img
-        src="https://devinarnold-website-content.s3.us-east-2.amazonaws.com/DA+logo_small.png"
-        alt="Devin Arnold Logo"
-      />
       <div className="nav-menu-hamburger">
         <HamburgerMenu
           isOpen={hamburgerOpen}
@@ -32,7 +26,7 @@ function Navigation() {
           height={20}
           strokeWidth={2}
           rotate={0}
-          color="white"
+          color={dark ? "white" : "black"}
           borderRadius={0}
           animationDuration={0.5}
         />

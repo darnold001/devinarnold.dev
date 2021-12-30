@@ -1,6 +1,4 @@
-import React from "react";
 import Carousel from "./Carousel";
-import closeIcon from "./Images/modal_close.jpg";
 import { CardInfo } from "./Types";
 export default function ProjectsInfoModal(props: {
   modal: CardInfo;
@@ -9,15 +7,12 @@ export default function ProjectsInfoModal(props: {
   return (
     <div className="projects-modal-wrapper">
       <div className="projects-info-modal">
-        <img
-          className="closeIcon"
-          src={closeIcon}
-          alt="close icon"
-          onClick={() => props.setModal(undefined)}
-        />
+        <button className="closeIcon" onClick={() => props.setModal(undefined)}>
+        ✖
+        </button>
         <div>
           {props.modal.photos.length > 1 && (
-            <Carousel photos={props.modal.photos} />
+            <Carousel images={props.modal.photos} />
           )}
           {props.modal.photos.length < 2 && (
             <img

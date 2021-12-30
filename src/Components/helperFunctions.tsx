@@ -1,5 +1,3 @@
-export function removeSpaces(inpt:string) {
-
-  var outpt = inpt.replace(/\s/g, "");
-  return outpt;
+export function removeSpaces(input: string) {
+  return input.replace(/\s/g, "");
 }
