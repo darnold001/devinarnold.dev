@@ -14,8 +14,6 @@ function Navigation() {
     );
   });
 
-  console.log(dark, "checking dark");
-
   return (
     <div className="nav-menu">
       <div className="nav-menu-hamburger">
