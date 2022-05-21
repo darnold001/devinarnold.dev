@@ -3,11 +3,10 @@ import { NavLink } from "react-router-dom";
 import TypeWriter from "../Typewriter";
 
 interface WelcomeProps {
-  showNav: () => void
+  showNav: () => void;
 }
 
-
-export default function WelcomeModal(props:WelcomeProps) {
+export default function WelcomeModal(props: WelcomeProps) {
   const { showNav } = props;
   useEffect(() => {
     showNav();
@@ -17,15 +16,14 @@ export default function WelcomeModal(props:WelcomeProps) {
   //   return <span id="strikethrough">{text}</span>;
   // }
 
-
-  const messages: (string)[] = [
+  const messages: string[] = [
     "I love to write in React.",
     "I write in Python.",
     "I write in Ruby.",
     "I am a full stack developer.",
     "I am a huge GIS nerd.",
     "I love design.",
-    "I love DevOps.",// `I currently live in ${strikeThrough('Denver, Colorado')} Portland, Oregon.`,
+    "I love DevOps.", // `I currently live in ${strikeThrough('Denver, Colorado')} Portland, Oregon.`,
     `I currently live in Portland, Oregon.`,
     // "I am a technology junkie.",
   ];
@@ -37,7 +35,7 @@ export default function WelcomeModal(props:WelcomeProps) {
           alt="Devin Arnold Logo"
         ></img>
         <TypeWriter heading={"About Me:"} messages={messages} />
-        <NavLink to="/about" onClick={showNav}>
+        <NavLink to="/about" onClick={showNav} className="primary-cta">
           Learn More
         </NavLink>
       </div>

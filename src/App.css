@@ -427,6 +427,10 @@ float: right;
 height:25px;
 }
 
+.primary-cta:hover, .primary-cta:focus {
+  background-color: white;
+  color: black;
+}
 
 @media only screen and (min-width: 600px) {
   .about-wrapper {

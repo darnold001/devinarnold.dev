@@ -37,7 +37,6 @@ function App() {
             </Route>
           ))}
           <Redirect exact from="/" to="welcome" />
-
           <Route component={PageNotFound} />
         </Switch>
       </Router>

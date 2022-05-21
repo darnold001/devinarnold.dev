@@ -23,4 +23,4 @@ RUN tsc --version
 
 
 # start app
-CMD ["npm", "start"]
+CMD ["npm", "start"]    
